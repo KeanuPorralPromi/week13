@@ -28,7 +28,7 @@ import pet.store.entity.PetStore;
 			petStoreCity = petStore.getPetStoreCity();
 			petStoreState = petStore.getPetStoreState();
 			petStoreZip = petStore.getPetStoreZip();
-			petStorePhone = petStore.getPetStoreZip();
+			petStorePhone = petStore.getPetStorePhone();
 			
 			for(Employee employee : petStore.getEmployees()) {
 				employees.add(new PetStoreEmployee(employee));
@@ -42,7 +42,7 @@ import pet.store.entity.PetStore;
 
 	@Data
 	@NoArgsConstructor
-	public class PetStoreCustomer{
+	public static class PetStoreCustomer{
 
 		private Long customerId;
 		private String customerFirstName;
@@ -60,7 +60,7 @@ import pet.store.entity.PetStore;
 	}
 	@Data
 	@NoArgsConstructor
-	public class PetStoreEmployee{
+	public static class PetStoreEmployee{
 		
 
 		private Long employeeId;
